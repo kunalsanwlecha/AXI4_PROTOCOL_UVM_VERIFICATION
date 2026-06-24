@@ -1,0 +1,13 @@
+`ifndef AXI_TEST_PKG
+`define AXI_TEST_PKG
+package axi_test_pkg;
+  import axi_agent_pkg::*;
+  import axi_env_pkg::*;
+  `include "axi_base_test.sv"
+  `include "axi_aligned_wr_test.sv"
+  `include "axi_unaligned_wr_test.sv"
+  `include "axi_read_test.sv"
+  `include "axi_wr_rd_test.sv"
+  `include "axi_slverr_test.sv"
+endpackage
+`endif
